@@ -1,4 +1,4 @@
-job('Seed') {
+job('Seed Groovy') {
   scm {
     git ('https://github.com/videocursoscloud/test-jenkins-jobdsl.git')
   }
