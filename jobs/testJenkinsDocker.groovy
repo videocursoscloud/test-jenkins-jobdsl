@@ -1,4 +1,4 @@
-pipelineJob("test-pipeline3") {
+pipelineJob("Pipeline Docker Jenkinsfile") {
   description()
   definition {
     cpsScm {
