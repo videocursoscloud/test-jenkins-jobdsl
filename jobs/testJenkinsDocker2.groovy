@@ -7,7 +7,6 @@ pipelineJob("test-pipeline2") {
           remote {
             url("https://github.com/videocursoscloud/test-jenkins-docker.git'")
           }
-          branch("master")
         }
       }
       scriptPath("Jenkinsfile")
