@@ -5,7 +5,7 @@ pipelineJob("test-pipeline") {
       scm {
         git {
           remote {
-            url("https://github.com/videocursoscloud/test-jenkins-jobdsl.git'")
+            url("https://github.com/videocursoscloud/test-jenkins-docker.git'")
           }
           branch("master")
         }
