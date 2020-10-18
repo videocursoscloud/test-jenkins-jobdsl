@@ -1,4 +1,4 @@
-pipelineJob("test-pipeline") {
+pipelineJob("test-pipeline2") {
   description()
   definition {
     cpsScm {
