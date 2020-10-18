@@ -1,13 +1,17 @@
-job('test Jenkins jobdsl') {
-  scm {
-    git ('https://github.com/videocursoscloud/test-jenkins-jobdsl.git')
-  }
-  steps {
-    dsl {
-      external('jobs/*.groovy')  
-      // default behavior
-      // removeAction('IGNORE')      
-      removeAction('DELETE')
+pipelineJob("test-pipeline3") {
+  description()
+  definition {
+    cpsScm {
+      scm {
+        git {
+          remote {
+            url("https://github.com/videocursoscloud/test-jenkins-docker.git")
+          }
+          branch("master")
+        }
+      }
+      scriptPath("Jenkinsfile")
     }
   }
 }
+
